@@ -8,18 +8,18 @@ ESBC=1
 # Choose Platform -
 # TRUST 3.0: LS2085
 # TRUST 3.1: LS2088, LS1088
-PLATFORM=LS1088
+PLATFORM=LS2088
 ---------------------------------------------------
 # Specify the Key Information.
 # PUB_KEY [Mandatory] Comma Seperated List
 # Usage: <srk1.pub> <srk2.pub> .....
-PUB_KEY=iekey2.pub
+PUB_KEY=iekey1.pub
 # IE_KEY_SEL [Mandatory]
 # USAGE (for TRUST 3.x): (between 1 to 32)
-IE_KEY_SEL=2
+IE_KEY_SEL=1
 # PRI_KEY [Mandatory] Single Key Used for Signing
 # USAGE: <srk.pri>
-PRI_KEY=iekey2.pri
+PRI_KEY=iekey1.pri
 ---------------------------------------------------
 # Specify IMAGE, Max 8 images are possible.
 # DST_ADDR is required only for Non-PBL Platform. [Mandatory]
@@ -44,4 +44,4 @@ IMAGE_HASH_FILENAME=
 RSA_SIGN_FILENAME=
 ---------------------------------------------------
 # Specify VERBOSE as 1, if you want to Display Header Information [Optional]
-VERBOSE=1
+VERBOSE=0
